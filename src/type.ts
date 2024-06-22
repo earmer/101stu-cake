@@ -8,4 +8,5 @@ export type UserInfo = {
     createdAt: string;
     status: string;
     statusTill: string;
+    pronouns: string;
 }

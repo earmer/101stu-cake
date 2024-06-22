@@ -12,6 +12,7 @@ export type UserInfo = {
     createdAt: string;
     status: string;
     statusTill: string;
+    pronouns: string;
 }
 
 async function getUserInfo(userID: number): Promise<UserInfo> {
@@ -28,7 +29,8 @@ async function getUserInfo(userID: number): Promise<UserInfo> {
         cover: result.Cover as string,
         createdAt: result.CreatedAt as string,
         status: result.StatusCode as string,
-        statusTill: result.StatusTill as string
+        statusTill: result.StatusTill as string,
+        pronouns: result.Pronouns as string
     };
     return user;
 }
@@ -101,7 +103,7 @@ function generateOtpSecret(userId: number): OTPAuth.TOTP {
         period: 30,
         // Arbitrary key encoded in Base32 or OTPAuth.Secret instance.
         secret: new OTPAuth.Secret({ size: 20 }),
-      });
+    });
 }
 
 function generateOtpCode(OTP: OTPAuth.TOTP): string {
