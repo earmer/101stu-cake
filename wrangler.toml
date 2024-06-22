@@ -1,0 +1,16 @@
+name = "101stu-cake"
+main = "src/index.ts"
+compatibility_date = "2024-06-22"
+
+[[kv_namespaces]]
+binding = "OAUTH_TOKENS"
+id = "a2a46aed681446c3b6eb51348e182912"
+
+[[kv_namespaces]]
+binding = "OAUTH_CLIENTS"
+id = "d30d3763213a4b4facbf9f0bafcabbe8"
+
+[[d1_databases]]
+binding = "UserDB" # i.e. available in your Worker on env.DB
+database_name = "101stu-cake-user"
+database_id = "64d5fb6e-9393-4e95-bfd8-66e262a6b8c2"

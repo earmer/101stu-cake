@@ -1,0 +1,1 @@
+declare const UserDB: D1Database;
